@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- Configuración básica -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página -->
+    <title>SolarHub | Explora el Sistema Solar</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Icono -->
+    <link rel="icon" href="img/sol.jpg">
+
+</head>
+
+<body>
+
+    <!-- ================================================= -->
+    <!-- HEADER -->
+    <!-- ================================================= -->
+
+    <header>
+
+        <div class="logo">
+
+            <h1>🌞 SolarHub</h1>
+
+            <p>Explora, aprende y descubre los secretos del Sistema Solar.</p>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="#inicio">Inicio</a></li>
+
+                <li><a href="#planetas">Planetas</a></li>
+
+                <li><a href="#curiosidades">Curiosidades</a></li>
+
+                <li><a href="#galeria">Galería</a></li>
+
+                <li><a href="#quiz">Quiz</a></li>
+
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ================================================= -->
+    <!-- BANNER -->
+    <!-- ================================================= -->
+
+    <section id="inicio" class="banner">
+
+        <div class="banner-contenido">
+
+            <h2>Explora el Sistema Solar de forma interactiva</h2>
+
+            <p>
+
+                Bienvenido a SolarHub, una plataforma educativa diseñada para aprender
+                sobre los planetas, el Sol, las lunas y muchos cuerpos celestes de una
+                forma divertida e interactiva.
+
+            </p>
+
+            <a href="#planetas" class="boton-principal">
+
+                Explorar el Sistema Solar
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================================================= -->
+    <!-- BIENVENIDA -->
+    <!-- ================================================= -->
+
+    <section class="bienvenida">
+
+        <h2>Bienvenido a SolarHub</h2>
+
+        <p>
+
+            SolarHub es una página educativa creada para estudiantes, docentes y
+            cualquier persona interesada en conocer el maravilloso Sistema Solar.
+
+        </p>
+
+        <p>
+
+            Aquí podrás aprender sobre los ocho planetas, descubrir curiosidades,
+            responder un quiz interactivo y observar una galería con imágenes del
+            espacio.
+
+        </p>
+
+    </section>
+
+    <!-- ================================================= -->
+    <!-- PLANETAS -->
+    <!-- ================================================= -->
+
+    <section id="planetas">
+
+        <h2 class="titulo-seccion">
+
+            Los Planetas del Sistema Solar
+
+        </h2>
+
+        <div class="contenedor-planetas">
+
+            <!-- MERCURIO -->
+
+            <article class="tarjeta">
+
+                <img src="img/mercurio.jpg" alt="Mercurio">
+
+                <h3>Mercurio</h3>
+
+                <button class="boton-planeta" data-planeta="mercurio">
+
+                    Ver información
+
+                </button>
+
+            </article>
+
+            <!-- VENUS -->
+
+            <article class="tarjeta">
+
+                <img src="img/venus.jpg" alt="Venus">
+
+                <h3>Venus</h3>
+
+                <button class="boton-planeta" data-planeta="venus">
+
+                    Ver información
+
+                </button>
+
+            </article>
+
+            <!-- TIERRA -->
+
+            <article class="tarjeta">
+
+                <img src="img/tierra.jpg" alt="Tierra">
+
+                <h3>Tierra</h3>
+
+                <button class="boton-planeta" data-planeta="tierra">
+
+                    Ver información
+
+                </button>
+
+            </article>
+
+            <!-- MARTE -->
+
+            <article class="tarjeta">
+
+                <img src="img/marte.jpg" alt="Marte">
+
+                <h3>Marte</h3>
+
+                <button class="boton-planeta" data-planeta="marte">
+
+                    Ver información
+
+                </button>
+
+            </article>
+
+            <!-- JUPITER -->
+
+            <article class="tarjeta">
+
+                <img src="img/jupiter.jpg" alt="Júpiter">
+
+                <h3>Júpiter</h3>
+
+                <button class="boton-planeta" data-planeta="jupiter">
+
+                    Ver información
+
+                </button>
+
+            </article>
+
+            <!-- SATURNO -->
+
+            <article class="tarjeta">
+
+                <img src="img/saturno.jpg" alt="Saturno">
+
+                <h3>Saturno</h3>
+
+                <button class="boton-planeta" data-planeta="saturno">
+
+                    Ver información
+
+                </button>
+
+            </article>
+
+            <!-- URANO -->
+
+            <article class="tarjeta">
+
+                <img src="img/urano.jpg" alt="Urano">
+
+                <h3>Urano</h3>
+
+                <button class="boton-planeta" data-planeta="urano">
+
+                    Ver información
+
+                </button>
+
+            </article>
+
+            <!-- NEPTUNO -->
+
+            <article class="tarjeta">
+
+                <img src="img/neptuno.jpg" alt="Neptuno">
+
+                <h3>Neptuno</h3>
+
+                <button class="boton-planeta" data-planeta="neptuno">
+
+                    Ver información
+
+                </button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Ventana emergente -->
+    <div id="modal" class="modal">
+
+        <div class="contenido-modal">
+
+            <span id="cerrar">&times;</span>
+
+            <div id="informacion-planeta">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================================================= -->
+<!-- MISIÓN Y VISIÓN -->
+<!-- ================================================= -->
+
+<section class="mision-vision">
+
+    <div class="caja">
+
+        <h2>🎯 Misión</h2>
+
+        <p>
+
+            Brindar información educativa, clara e interactiva sobre el Sistema Solar,
+            permitiendo que estudiantes, docentes y personas interesadas aprendan de
+            manera sencilla y entretenida.
+
+        </p>
+
+    </div>
+
+    <div class="caja">
+
+        <h2>🚀 Visión</h2>
+
+        <p>
+
+            Ser una plataforma educativa digital reconocida por facilitar el aprendizaje
+            de la astronomía mediante recursos visuales, actividades interactivas y
+            contenido actualizado.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- CURIOSIDADES -->
+<!-- ================================================= -->
+
+<section id="curiosidades">
+
+    <h2 class="titulo-seccion">
+
+        🌟 Curiosidades del Sistema Solar
+
+    </h2>
+
+    <div class="contenedor-curiosidades">
+
+        <div class="curiosidad">
+
+            <h3>☿ Mercurio</h3>
+
+            <p>
+
+                Un día en Mercurio dura más que un año.
+
+            </p>
+
+        </div>
+
+        <div class="curiosidad">
+
+            <h3>♀ Venus</h3>
+
+            <p>
+
+                Gira en sentido contrario a la mayoría de los planetas.
+
+            </p>
+
+        </div>
+
+        <div class="curiosidad">
+
+            <h3>♃ Júpiter</h3>
+
+            <p>
+
+                Es tan grande que cabrían más de 1300 Tierras en su interior.
+
+            </p>
+
+        </div>
+
+        <div class="curiosidad">
+
+            <h3>🪐 Saturno</h3>
+
+            <p>
+
+                Sus anillos están formados principalmente por hielo y roca.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- ¿SABÍAS QUE...? -->
+<!-- ================================================= -->
+
+<section class="sabias">
+
+    <h2>
+
+        🚀 ¿Sabías que...?
+
+    </h2>
+
+    <p id="datoCurioso">
+
+        Presiona el botón para descubrir una curiosidad del espacio.
+
+    </p>
+
+    <button id="btnCuriosidad">
+
+        Mostrar curiosidad
+
+    </button>
+
+</section>
+
+<!-- ================================================= -->
+<!-- QUIZ -->
+<!-- ================================================= -->
+
+<section id="quiz">
+
+    <h2 class="titulo-seccion">
+
+        📝 Quiz Espacial
+
+    </h2>
+
+    <div class="quiz">
+
+        <p>
+
+            <strong>1.</strong>
+            ¿Cuál es el planeta más grande del Sistema Solar?
+
+        </p>
+
+        <label>
+
+            <input type="radio" name="p1" value="0">
+
+            Marte
+
+        </label>
+
+        <label>
+
+            <input type="radio" name="p1" value="1">
+
+            Júpiter
+
+        </label>
+
+        <label>
+
+            <input type="radio" name="p1" value="0">
+
+            Venus
+
+        </label>
+
+        <label>
+
+            <input type="radio" name="p1" value="0">
+
+            Mercurio
+
+        </label>
+
+        <hr>
+
+        <p>
+
+            <strong>2.</strong>
+
+            ¿Cuál es conocido como el planeta rojo?
+
+        </p>
+
+        <label>
+
+            <input type="radio" name="p2" value="0">
+
+            Saturno
+
+        </label>
+
+        <label>
+
+            <input type="radio" name="p2" value="1">
+
+            Marte
+
+        </label>
+
+        <label>
+
+            <input type="radio" name="p2" value="0">
+
+            Venus
+
+        </label>
+
+        <label>
+
+            <input type="radio" name="p2" value="0">
+
+            Urano
+
+        </label>
+
+        <button id="calificar">
+
+            Calificar Quiz
+
+        </button>
+
+        <h3 id="resultadoQuiz">
+
+        </h3>
+
+    </div>
+
+</section>
+
+    <!-- ================================================= -->
+<!-- GALERÍA -->
+<!-- ================================================= -->
+
+<section id="galeria">
+
+    <h2 class="titulo-seccion">
+
+        🌌 Galería Espacial
+
+    </h2>
+
+    <div class="galeria">
+
+        <div class="imagen">
+
+            <img src="img/sol.jpg" alt="Sol">
+
+            <p><strong>Sol</strong><br>La estrella que da vida al Sistema Solar.</p>
+
+        </div>
+
+        <div class="imagen">
+
+            <img src="img/tierra.jpg" alt="Tierra">
+
+            <p><strong>Tierra</strong><br>Nuestro hogar.</p>
+
+        </div>
+
+        <div class="imagen">
+
+            <img src="img/luna.jpg" alt="Luna">
+
+            <p><strong>Luna</strong><br>El único satélite natural de la Tierra.</p>
+
+        </div>
+
+        <div class="imagen">
+
+            <img src="img/asteroide.jpg" alt="Asteroide">
+
+            <p><strong>Asteroides</strong><br>Fragmentos rocosos que orbitan el Sol.</p>
+
+        </div>
+
+        <div class="imagen">
+
+            <img src="img/cometa.jpg" alt="Cometa">
+
+            <p><strong>Cometas</strong><br>Cuerpos de hielo y polvo que dejan una cola brillante.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- CONTACTO -->
+<!-- ================================================= -->
+
+<section id="contacto">
+
+    <h2 class="titulo-seccion">
+
+        📩 Contáctanos
+
+    </h2>
+
+    <form>
+
+        <input
+            type="text"
+            placeholder="Nombre completo"
+            required
+        >
+
+        <input
+            type="email"
+            placeholder="Correo electrónico"
+            required
+        >
+
+        <textarea
+            rows="6"
+            placeholder="Escribe tu mensaje..."
+            required
+        ></textarea>
+
+        <button type="submit">
+
+            Enviar mensaje
+
+        </button>
+
+    </form>
+
+</section>
+
+<!-- ================================================= -->
+<!-- FOOTER -->
+<!-- ================================================= -->
+
+<footer>
+
+    <h3>🌞 SolarHub</h3>
+
+    <p>
+
+        Explora, aprende y descubre los secretos del Sistema Solar.
+
+    </p>
+
+    <p>
+
+        Proyecto educativo desarrollado con HTML, CSS y JavaScript.
+
+    </p>
+
+    <p>
+
+        © 2026 SolarHub | Todos los derechos reservados.
+
+    </p>
+
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

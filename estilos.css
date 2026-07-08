@@ -1,0 +1,880 @@
+/* ========================================= */
+/* SOLARHUB - HOJA DE ESTILOS */
+/* ========================================= */
+
+/* Reinicia los estilos del navegador */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Scroll suave */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* Cuerpo de la página */
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#050816;
+
+    color:white;
+
+    line-height:1.6;
+
+}
+
+/* ========================================= */
+/* HEADER */
+/* ========================================= */
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 60px;
+
+    background:rgba(0,0,0,.75);
+
+    backdrop-filter:blur(8px);
+
+    z-index:1000;
+
+}
+
+.logo h1{
+
+    color:#FFD54F;
+
+    font-size:35px;
+
+}
+
+.logo p{
+
+    color:#ddd;
+
+    font-size:14px;
+
+}
+
+nav ul{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#FFD54F;
+
+}
+
+/* ========================================= */
+/* BANNER */
+/* ========================================= */
+
+.banner{
+
+    height:100vh;
+
+    background:url("img/portada.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.banner-contenido{
+
+    background:rgba(0,0,0,.65);
+
+    padding:40px;
+
+    border-radius:20px;
+
+    max-width:900px;
+
+}
+
+.banner h2{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.banner p{
+
+    font-size:20px;
+
+    margin-bottom:35px;
+
+}
+
+/* Botón principal */
+
+.boton-principal{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    background:#FFD54F;
+
+    color:black;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.boton-principal:hover{
+
+    transform:scale(1.08);
+
+    background:white;
+
+}
+
+/* ========================================= */
+/* BIENVENIDA */
+/* ========================================= */
+
+.bienvenida{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:80px auto;
+
+    text-align:center;
+
+}
+
+.bienvenida h2{
+
+    font-size:42px;
+
+    color:#FFD54F;
+
+    margin-bottom:20px;
+
+}
+
+.bienvenida p{
+
+    font-size:20px;
+
+    color:#DDD;
+
+    margin-bottom:20px;
+
+}
+
+/* ========================================= */
+/* MISIÓN Y VISIÓN */
+/* ========================================= */
+
+.mision-vision{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:80px auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:30px;
+
+}
+
+.caja{
+
+    flex:1;
+
+    background:#11172d;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.4s;
+
+}
+
+.caja:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.caja h2{
+
+    color:#FFD54F;
+
+    margin-bottom:20px;
+
+}
+
+.caja p{
+
+    color:#DDD;
+
+}
+
+/* ========================================= */
+/* TÍTULOS */
+/* ========================================= */
+
+.titulo-seccion{
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#FFD54F;
+
+    margin-bottom:50px;
+
+}
+
+/* ========================================= */
+/* PLANETAS */
+/* ========================================= */
+
+#planetas{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:80px auto;
+
+}
+
+.contenedor-planetas{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+/* ========================================= */
+/* TARJETAS */
+/* ========================================= */
+
+.tarjeta{
+
+    background:#11172d;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:0 0 20px rgba(0,0,0,.35);
+
+}
+
+.tarjeta:hover{
+
+    transform:translateY(-10px) scale(1.03);
+
+}
+
+.tarjeta img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+.tarjeta h3{
+
+    margin:20px 0;
+
+    font-size:28px;
+
+    color:#FFD54F;
+
+}
+
+/* ========================================= */
+/* BOTONES */
+/* ========================================= */
+
+.boton-planeta{
+
+    margin-bottom:25px;
+
+    padding:12px 30px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#FFD54F;
+
+    color:#000;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.boton-planeta:hover{
+
+    background:white;
+
+    transform:scale(1.05);
+
+}
+
+/* ========================================= */
+/* CURIOSIDADES */
+/* ========================================= */
+
+#curiosidades{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:100px auto;
+
+}
+
+.contenedor-curiosidades{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+}
+
+.curiosidad{
+
+    background:#11172d;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+}
+
+.curiosidad:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.curiosidad h3{
+
+    color:#FFD54F;
+
+    margin-bottom:15px;
+
+}
+
+/* ========================================= */
+/* SABÍAS QUE */
+/* ========================================= */
+
+.sabias{
+
+    text-align:center;
+
+    margin:100px auto;
+
+    width:90%;
+
+}
+
+.sabias h2{
+
+    font-size:40px;
+
+    color:#FFD54F;
+
+    margin-bottom:25px;
+
+}
+
+#datoCurioso{
+
+    font-size:22px;
+
+    margin-bottom:30px;
+
+}
+
+#btnCuriosidad{
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#FFD54F;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+#btnCuriosidad:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* ========================================= */
+/* QUIZ */
+/* ========================================= */
+
+.quiz{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:#11172d;
+
+    padding:40px;
+
+    border-radius:20px;
+
+}
+
+.quiz p{
+
+    font-size:20px;
+
+    margin-bottom:20px;
+
+}
+
+.quiz label{
+
+    display:block;
+
+    margin:12px 0;
+
+    cursor:pointer;
+
+}
+
+#calificar{
+
+    margin-top:30px;
+
+    padding:15px 35px;
+
+    border:none;
+
+    background:#FFD54F;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+#resultadoQuiz{
+
+    margin-top:30px;
+
+    color:#FFD54F;
+
+}
+
+/* ========================================= */
+/* GALERÍA */
+/* ========================================= */
+
+#galeria{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:100px auto;
+
+}
+
+.galeria{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.imagen{
+
+    background:#11172d;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.imagen img{
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+}
+
+.imagen p{
+
+    padding:20px;
+
+}
+
+/* ========================================= */
+/* CONTACTO */
+/* ========================================= */
+
+#contacto{
+
+    width:90%;
+
+    max-width:800px;
+
+    margin:100px auto;
+
+}
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+input,
+textarea{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:17px;
+
+}
+
+form button{
+
+    padding:15px;
+
+    border:none;
+
+    background:#FFD54F;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+/* ========================================= */
+/* FOOTER */
+/* ========================================= */
+
+footer{
+
+    background:#02040d;
+
+    text-align:center;
+
+    padding:40px;
+
+    margin-top:80px;
+
+}
+
+footer h3{
+
+    color:#FFD54F;
+
+    margin-bottom:15px;
+
+}
+
+footer p{
+
+    color:#AAA;
+
+    margin:8px 0;
+
+}
+
+/* ========================================= */
+/* MODAL */
+/* ========================================= */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.8);
+
+    z-index:9999;
+
+}
+
+.contenido-modal{
+
+    background:#11172d;
+
+    width:80%;
+
+    max-width:700px;
+
+    margin:70px auto;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    position:relative;
+
+}
+
+#cerrar{
+
+    position:absolute;
+
+    right:25px;
+
+    top:15px;
+
+    font-size:35px;
+
+    cursor:pointer;
+
+}
+
+/* ========================================= */
+/* RESPONSIVE */
+/* ========================================= */
+
+@media(max-width:900px){
+
+header{
+
+    flex-direction:column;
+
+    padding:20px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.banner h2{
+
+    font-size:38px;
+
+}
+
+.mision-vision{
+
+    flex-direction:column;
+
+}
+
+.logo{
+    text-align:center;
+}
+
+.logo h1{
+    font-size:28px;
+}
+
+.logo p{
+    font-size:13px;
+}
+
+nav ul{
+    gap:15px;
+}
+
+.banner{
+    padding:20px;
+}
+
+.banner-contenido{
+    padding:25px;
+}
+
+.banner p{
+    font-size:18px;
+}
+
+.titulo-seccion{
+    font-size:32px;
+}
+
+.bienvenida h2{
+    font-size:32px;
+}
+
+.bienvenida p{
+    font-size:18px;
+}
+
+.quiz{
+    padding:25px;
+}
+
+.contenido-modal{
+    width:95%;
+    margin:20px auto;
+}
+
+}
+
+@media (max-width:600px){
+
+    .banner h2{
+        font-size:28px;
+    }
+
+    .banner p{
+        font-size:16px;
+    }
+
+    .boton-principal{
+        padding:12px 25px;
+        font-size:15px;
+    }
+
+    .tarjeta img{
+        height:200px;
+    }
+
+    .titulo-seccion{
+        font-size:28px;
+    }
+
+    .sabias h2{
+        font-size:30px;
+    }
+
+}
